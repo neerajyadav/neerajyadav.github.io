@@ -1,10 +1,10 @@
 # **Neeraj Kumar**
 
-**Principal Architect / Founding Engineer | SaaS | Solana Blockchain | Cloud | Distributed Systems | Sustainability Tech**  
-Gurgaon, India • [linkedin.com/in/neeraj-kosliya](https://linkedin.com/in/neeraj-kosliya)
-
----
-
+**Principal Architect / Founding Engineer | SaaS | Solana Blockchain | Cloud | Distributed Systems | Sustainability Tech** 
+Gurugram, Haryana, India
+er.neerajyadav@gmail.com
+linkedin.com/in/neeraj-kosliya
+ 
 ## **SUMMARY**
 
 - 14+ years building and scaling **SaaS platforms, distributed systems, and data-intensive products** across startups and enterprises.  
@@ -12,8 +12,6 @@ Gurgaon, India • [linkedin.com/in/neeraj-kosliya](https://linkedin.com/in/neer
 - Deep hands-on expertise in **Node.js, Go, microservices, Kubernetes, and event-driven systems** across **AWS, Azure, and GCP**.  
 - Recent focus on **Solana blockchain trading and analytics**: Geyser indexers, Transaction and Instructions decoders, on-chain data pipelines, and ML-assisted trading engines.  
 - Proven track record of **end-to-end ownership** — discovery, architecture, implementation, CI/CD, observability, and stakeholder alignment with business and product goals.
-
----
 
 ## **CORE STRENGTHS**
 
@@ -25,8 +23,6 @@ Gurgaon, India • [linkedin.com/in/neeraj-kosliya](https://linkedin.com/in/neer
 - Engineering Leadership 
 - Sustainability Tech
 
----
-
 ## **TECHNICAL SKILLS**
 
 **Languages:** TypeScript/JavaScript (Node.js), Go, C#, Dart  
@@ -35,123 +31,90 @@ Gurgaon, India • [linkedin.com/in/neeraj-kosliya](https://linkedin.com/in/neer
 **Distributed Systems:** Microservices, gRPC, NATS JetStream, event-driven patterns  
 **Databases:** PostgreSQL, ClickHouse, MongoDB, ArangoDB  
 **DevOps:** Docker, Kubernetes, Helm, GitHub CI/CD, Skaffold, ArgoCD  
-**Architecture:** SaaS, multi-tenancy, high-throughput ingestion systems  
-
----
-
-## **RECENT BLOCKCHAIN & CRYPTO ENGINEERING(May 2025 – Present)**
-
-### **Solana Token Trading Engine & Analytics Platform — Architect & Engineer**  
-**Independent Product Builder | Crypto & AI Engineering**
-
-- Built low-latency **Solana Geyser listener** in Go for real-time block/transactions ingestion.  
-  - Designed ingestion pipeline using **Geyser Stream → NATS JetStream → ClickHouse/Postgres** with sub-second end-to-end latency.
-  - Developed decoding pipeline with custom instructions/events decoders for mint, swap, pool creation and pool migration events for major solana programs like **pump.fun**, **pump-swap**, **Raydium AMM/CPMM**.  
-- Developed **ML-assisted trading engine**:
-  - Trained XGBoost model on historical on-chain data to predict short-term price movements of newly minted tokens.
-  - Implemented feature engineering techniques to extract insights from on-chain mint event data, improving model accuracy.
-  - Developed trading engine with features like Delayed Buy, Multiple Take Profits, trailing Stop-loss etc.
-  - Optimised trading engine in Go for ultra-low latency execution which listens to geyser stream, decodes transactions, constructs price stream and executes trades on chain within milliseconds.
-- Leveraged **AI-assisted coding** tools (GitHub Copilot, Claude Code, ChatGPT Codex) to increase development throughput by ~5x.
-
----
-
+**Architecture:** SaaS, multi-tenancy, high-throughput ingestion systems
+ 
 ## **EXPERIENCE**
-
-### **Principal Architect — Emission Critical Pvt. Ltd.**  
-**Jul 2022 – May 2025 | Gurgaon, India**
-
-- Architected and developed a **multi-tenant ESG/PCF SaaS platform** on **AWS EKS** and **Aurora Postgres** enabling large enterprise customers to capture/model supply chain emissions and ESG reporting.   
-- Designed **Integration and ETL workflows** using **Airbyte**, **NATS JetStream** and **Postgres** for loading and transforming activity data to sustainability reports.  
-- Translated complex **carbon accounting and ESG models** into intuitive digital workflows, improving adoption and data quality for clients.   
-- Owned **system design, cloud architecture, performance, reliability, and security posture** of the platform.
-
----
-
-### **Head of Technology — Poker Sports League (Hashtag Poker)**  
-**Aug 2020 – Jun 2022 | Gurgaon, India**
-
-- Joined as founding technology leader; **built the entire engineering team from scratch** (11 members across backend, mobile, web, QA).  
-- Architected and delivered the **Hashtag Poker** platform — Flutter mobile apps, Node.js microservices, and **Kubernetes + NATS + PostgreSQL** backend.  
-- Integrated **real-time game logic, payments, and event-driven microservices**, scaling to thousands of concurrent users.  
-- Established **CI/CD, monitoring, and operational runbooks**, significantly improving release frequency and platform stability.
-
----
-
-### **Engineering Manager & Co-Founder — Mu Software Solutions Pvt. Ltd.**  
-**2014 – 2017, 2018 – 2020 | Gurgaon, India**
-
-- Co-founded a technology services and product studio delivering **end-to-end product development** for startups and mid-sized enterprises.  
-- Helped multiple founders go from **idea → MVP → early traction**, emphasizing fast validation and real user feedback.  
-- Led architecture and development of **cloud-native products** using **Node.js (NestJS)**, **.NET Core**, **Flutter**, **Azure** and **GCP**.  
-- Built and managed engineering teams (0→25), owning **requirement analysis, architecture, execution, delivery, and client communication**.  
-
----
-
-### **Consultant (Microsoft India — HP Inc.) — Data Glove IT Solutions**  
-**2017 – 2018 | Bangalore, India**
-
-- Automated **Azure analytics pipelines** for **HP Inc.**, improving speed and reliability of complex data operations.  
-- Implemented scripts and workflows using **ADLA, ADLS, ADF, Logic Apps, Automation Runbooks**, reducing manual interventions by ~60%.  
-
----
-
-### **Senior Software Engineer — PS Intelegencia Analytics Pvt. Ltd.**  
-**2012 – 2014 | India**
-
-- Built modern web and mobile applications using **.NET MVC**, **Entity Framework**, and related technologies.  
-- Owned end-to-end delivery from requirement discovery and design to deployment and stabilization.  
-
----
-
-### **Software Engineer — Elixir Computech Pvt. Ltd.**  
-**2010 – 2012 | India**
-
-- Developed **enterprise automation solutions** using **ASP.NET**, JavaScript, and SQL Server.  
-- Collaborated directly with clients to translate business needs into scalable technical designs.  
-
----
-
-## **PROJECTS**
-
-### **Crypto Meme-Coin Trading Bot (Solana)**
+ 
+**Independent Product Builder**  
+**Solana Token Trading Engine & Analytics Platform**  
+*May 2025 – Present*
 High performance trading bot with ultra-low latency for newly minted Solana tokens. Trade based on XGBoost model predictions and on-chain signals and execute sell strategies like multiple take-profits and trailing stop-loss by continuously monitoring token price movements.
 
-- Designed a custom **Go-based trading engine** using **Solana Geyser Streams** for ultra-fast execution and real-time mint detection.  
-- Integrated **developer-buy tracking, liquidity pool intelligence, wallet metrics, and early-signal analytics** to drive trading decisions.
+- End-to-end development of a high-frequency trading platform on Solana, focusing on sub-second latency and data accuracy.
+- Designing scalable architecture to handle high throughput from blockchain streams, ensuring reliability for real-time trading decisions.
+- Integrating advanced ML models into the trading workflow to automate decision-making based on live on-chain signals.
+- Utilizing AI-assisted development workflows to maximize individual engineering throughput and rapid prototyping.
 
-### **Product Carbon Footprint (PCF) SaaS Platform**
+**Key Technical Implementation:**
+- **Ingestion Pipeline:** Engineered a custom **Go-based Geyser listener** consuming raw solana blockchain streams. Implemented a **NATS JetStream** buffer to decouple ingestion from processing, ensuring zero data loss during bursts.
+- **ML-model assisted trading engine:** Trained XGBoost model on historical on-chain data to predict short-term price movements of newly minted tokens. Implemented feature engineering techniques to extract insights from on-chain mint events, improving model accuracy.
+- **Data Storage:** Optimized **ClickHouse** schemas for high-speed write ingestion of block data and **PostgreSQL** for transactional state management.
+- **Decoding Logic:** Wrote custom binary decoders for **Anchor** programs (Raydium, Pump.fun, pump-swap) to extract trade events directly from raw instruction data, bypassing slower public RPCs.
+- **Execution:** Built an execution engine that constructs and signs transactions in microseconds, utilizing **Jito bundles** for guaranteed inclusion.
+
+**Principal Architect**  
+**Emission Critical Pvt. Ltd.**  
+*Jul 2022 – May 2025*
 SOC2 certified multi-tenant SaaS platform for enterprise sustainability management, enabling organizations to measure, report, and reduce their carbon footprint and ESG impact.
 
-- Implemented multi-tenant architecture with RBAC + ABAC access control, data isolation, and compliance features.
-  - Used OpenFGA for fine-grained access control across tenants and user roles. OpenFGA is an open-source authorization system based on **Google Zanzibar**.
-- Implemented a complex model to enable customers to create their process map and ingest activity data which in turn calculate product carbon footprints as per **GHG Standard**.
-- **NestJs (NodeJs)** based microservices using NATS for inter-service communication and event-driven workflows.
-- Created and maintained **EKS** Kubernetes cluster for hosting microservices and other workloads with **Helm/Kustomize** and **ArgoCD** for GitOps-based continuous deployment.
-- Designed data ingestion pipelines using **Airbyte** to connect various data sources (S3, ERP, CRM, spreadsheets) to the platform.
-- OpenTelemetry-based observability with distributed tracing, metrics, and logging using **SigNoz**.
+- Spearheaded the technical vision and architecture for the platform, enabling enterprise clients to manage complex ESG reporting.
+- Led the migration of complex carbon accounting methodologies into scalable digital workflows, directly impacting customer adoption.
+- Owned the platform's reliability, security, and cloud infrastructure strategy, ensuring compliance with enterprise standards (SOC2).
+- Designed and implemented high-volume data integration strategies to ingest fragmented supply chain data from diverse client systems.
 
-### **Hashtag Poker Platform**
-End-to-end poker learning and playing platform with cross-platform mobile apps, real-time game engine, and scalable backend infrastructure.
+**Key Technical Implementation:**
+- **Multi-Tenancy:** Implemented a hard-isolated multi-tenant architecture on **AWS EKS**. Leveraged **OpenFGA** (Google Zanzibar implementation) for fine-grained, relationship-based access control (ReBAC) across complex organizational hierarchies.
+- **Event-Driven ETL:** Designed an asynchronous ETL pipeline using **Airbyte** for data extraction and **NATS** for event propagation, allowing users to upload massive datasets without blocking the UI.
+- **Infrastructure:** Managed **EKS** Kubernetes clusters for hosting microservices and other workloads, utilizing **ArgoCD** and **Helm** to implement GitOps deployments for rapid, consistent updates across environments.
+- **Observability:** Integrated **SigNoz** (OpenTelemetry) for end-to-end distributed tracing, enabling rapid root-cause analysis of performance bottlenecks in microservices.
 
-- Led full-stack development of **Flutter mobile apps** (iOS/Android) with shared business logic using MVVM architecture.  
-- Built **Node.js microservices** for game logic, user management, payments, and notifications.  
-- Deployed backend on **Kubernetes** with **NATS JetStream** for real-time messaging and **MongoDB** for data storage.
-- Established CI/CD pipelines using **GitHub Actions** and implemented monitoring with **Prometheus** and **Grafana**.
+**Head of Technology**  
+**Poker Sports League (Hashtag Poker)**  
+*Aug 2020 – Jun 2022*
+End-to-end poker learning and playing platform with mobile apps, real-time game engine, and scalable backend infrastructure.
 
-### **Arkaa Digital Healthcare Platform**
-A comprehensive digital healthcare platform for telemedicine, patient management, and health data analytics.
+- Built and led the engineering division from the ground up, hiring and mentoring a cross-functional team of 11 developers and QA engineers.
+- Defined the technology roadmap and architecture for a highly concurrent gaming platform, ensuring stability during peak tournament traffic.
+- Established engineering best practices, including CI/CD pipelines, automated testing, and observability, reducing deployment failures and downtime.
 
-- Built a **cloud-native digital consultation ecosystem** on **Azure microservices** with secure patient-doctor interactions, appointment scheduling, and document sharing.  
-- Designed distributed microservices with **Azure AD**, queues, and notification systems; led an 11-member cross-functional team.
+**Key Technical Implementation:**
+- **Mobile Apps:** Led full-stack development of **Flutter mobile apps** (iOS/Android) with shared business logic using MVVM architecture.
+- **Concurrency:** Utilized **NATS JetStream** for broadcasting real-time game events (moves, folds, wins) to **Flutter** clients with millisecond latency.
+- **Scalability:** Deployed on **Kubernetes** with horizontal pod autoscaling (HPA) and monitoring with **Prometheus** and **Grafana**.
 
-### **Adda52 Poker & Rummy Apps**
-Leading online poker and rummy gaming platform in India with millions of users.
+**Co-Founder & Engineering Manager**  
+**Mu Software Solutions Pvt. Ltd.**  
+*2014 – 2017, 2018 – 2020*
+- Co-founded a product engineering studio, guiding startups from initial concept to MVP and market traction.
+- Managed multiple concurrent product lifecycles, acting as the technical partner for non-technical founders.
+- Led the architectural decision-making process, selecting appropriate tech stacks (Cloud-native, Microservices) for scalability and cost-efficiency.
+- Mentored engineering teams, fostering a culture of ownership, code quality, and rapid delivery.
 
-- Architected cross-platform **Xamarin** apps, enabling ~60% of overall traffic via mobile.  
-- Implemented shared business logic and MVVM patterns to streamline iOS/Android development.
+**Key Technical Implementation:**
+- **Arkaa Digital Healthcare:** Built a **cloud-native digital consultation ecosystem** on **Azure microservices** with secure patient-doctor interactions, appointment scheduling, and document sharing. Designed distributed microservices with **Azure AD**, queues, and notification systems.
+- **Adda52 Poker & Rummy:** Architected cross-platform **Xamarin** apps, enabling ~60% of overall traffic via mobile. Implemented shared business logic and MVVM patterns to streamline iOS/Android development.
 
----
+**Consultant (Microsoft India — HP Inc.)**  
+**Data Glove IT Solutions**  
+*2017 – 2018*
+- Optimized large-scale data analytics operations for HP Inc., focusing on automation and reliability of Azure-based pipelines.
+- Streamlined manual data processes into automated workflows, significantly reducing operational overhead and error rates.
+
+**Key Technical Implementation:**
+- **Azure Data Factory & Logic Apps:** Automated complex data ingestion and transformation workflows for HP's global sales data, reducing manual effort by 70%.
+- **Power BI Integration:** Developed interactive dashboards for real-time performance monitoring and anomaly detection in data pipelines.
+
+**Senior Software Engineer**  
+**PS Intelegencia Analytics Pvt. Ltd.**  
+*2012 – 2014*
+- Led the development of core web and mobile application modules using the .NET ecosystem.
+- Managed the full software development lifecycle (SDLC) for key client projects, ensuring on-time delivery.
+
+**Software Engineer**  
+**Elixir Computech Pvt. Ltd.**  
+*2010 – 2012*
+- Developed custom enterprise automation tools, translating business requirements into functional software solutions.
+- Collaborated with clients to refine technical specifications and deliver scalable .NET applications.
 
 ## **EDUCATION**
 
