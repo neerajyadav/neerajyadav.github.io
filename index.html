@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neeraj Kumar - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            /* Deep Blue */
+            --accent-color: #2563eb;
+            /* Bright Blue */
+            --text-primary: #1f2937;
+            --text-secondary: #4b5563;
+            --bg-page: #f3f4f6;
+            --bg-card: #ffffff;
+            --border-color: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-page);
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 21cm;
+            margin: 20px auto;
+            background: var(--bg-card);
+            padding: 0;
+            box-shadow: var(--shadow-md);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2c5282 100%);
+            color: white;
+            padding: 25px 30px;
+            position: relative;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .headline {
+            font-size: 15px;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            max-width: 90%;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 13px;
+            opacity: 0.95;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-item svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 1px;
+            transition: all 0.2s;
+        }
+
+        .contact-item a:hover {
+            border-bottom-color: white;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 25px 30px;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+            margin-left: 10px;
+        }
+
+        h2 svg {
+            width: 20px;
+            height: 20px;
+            color: var(--accent-color);
+        }
+
+        /* Cards */
+        .card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            border-color: var(--accent-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Highlight Card for Crypto */
+        .highlight-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .highlight-card .job-title {
+            color: var(--primary-color);
+            font-size: 16px;
+        }
+
+        .highlight-card .company-name {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Summary List */
+        .summary-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .summary-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .summary-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1;
+            top: -2px;
+        }
+
+        /* Skills Tags (Core Strengths) */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #eff6ff;
+            color: var(--primary-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            border: 1px solid #dbeafe;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        /* Technical Skills Table */
+        .skills-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .skills-table tr:not(:last-child) td {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .skills-table td {
+            padding: 12px 15px;
+            vertical-align: middle;
+        }
+
+        .skill-category-cell {
+            background-color: #f8fafc;
+            width: 160px;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-right: 1px solid var(--border-color);
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .skill-list-cell {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Timeline for Experience */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            border-left: 2px solid #bfdbfe;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -37px;
+            top: 6px;
+            width: 14px;
+            height: 14px;
+            background: var(--accent-color);
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px #dbeafe;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .company-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 8px;
+        }
+
+        .job-date {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            background: #f3f4f6;
+            padding: 2px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .job-details ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .job-details li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 6px;
+            color: var(--text-secondary);
+            font-size: 13.5px;
+        }
+
+        .job-details li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Project Cards */
+        .project-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 15px;
+            transition: box-shadow 0.2s;
+        }
+
+        .project-card:hover {
+            box-shadow: var(--shadow-sm);
+            border-color: #cbd5e1;
+        }
+
+        .project-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .project-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        /* Print Optimization */
+        @media print {
+            @page {
+                margin: 0.5cm;
+                size: auto;
+            }
+
+            body {
+                background: white;
+                font-size: 11.5px;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            .container {
+                width: 100%;
+                max-width: none;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                border: none;
+            }
+
+            header {
+                background: linear-gradient(135deg, var(--primary-color) 0%, #2c5282 100%) !important;
+                color: white !important;
+                padding: 20px 25px;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            h1 {
+                color: white !important;
+            }
+
+            .headline {
+                color: rgba(255, 255, 255, 0.9) !important;
+            }
+
+            .contact-item a {
+                color: white !important;
+                border-bottom-color: rgba(255, 255, 255, 0.3);
+            }
+
+            .contact-item svg {
+                fill: white !important;
+            }
+
+            .card,
+            .project-card,
+            .highlight-card {
+                border: 1px solid #eee;
+                box-shadow: none;
+                margin-bottom: 15px;
+                break-inside: avoid;
+            }
+
+            .project-card,
+            .highlight-card {
+                /* border-left: 4px solid var(--accent-color) !important; */
+            }
+
+            .skills-table {
+                border: 1px solid #ccc;
+            }
+
+            .skill-category-cell {
+                background-color: #f0f0f0 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            h2,
+            .job-header {
+                page-break-after: avoid;
+            }
+
+            .timeline-item,
+            .project-card,
+            tr {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Neeraj Kumar</h1>
+            <div class="headline">Principal Architect / Founding Engineer | SaaS | Solana Blockchain | Cloud |
+                Distributed Systems | Sustainability Tech</div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                    </svg>
+                    <span>Gurgaon, India</span>
+                </div>
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                    </svg>
+                    <a href="https://linkedin.com/in/neeraj-kosliya" target="_blank">linkedin.com/in/neeraj-kosliya</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <section>
+                <h2>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Summary
+                </h2>
+                <div class="card">
+                    <ul class="summary-list">
+                        <li>14+ years building and scaling <strong>SaaS platforms, distributed systems, and
+                                data-intensive products</strong> across startups and enterprises.</li>
+                        <li>Blend of <strong>founding engineer / principal architect</strong> experience: 0→1 product
+                            development, multi-tenant SaaS architecture, and leading cross-functional engineering teams.
+                        </li>
+                        <li>Deep hands-on expertise in <strong>Node.js, Go, microservices, Kubernetes, and event-driven
+                                systems</strong> across <strong>AWS, Azure, and GCP</strong>.</li>
+                        <li>Recent focus on <strong>Solana blockchain trading and analytics</strong>: Geyser indexers,
+                            Transaction and Instructions decoders, on-chain data pipelines, and ML-assisted trading
+                            engines.</li>
+                        <li>Proven track record of <strong>end-to-end ownership</strong> — discovery, architecture,
+                            implementation, CI/CD, observability, and stakeholder alignment with business and product
+                            goals.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                        </path>
+                    </svg>
+                    Core Strengths
+                </h2>
+                <div class="skills-container">
+                    <span class="skill-tag">0→1 Product Development & Startup Execution</span>
+                    <span class="skill-tag">SaaS & Platform Architecture</span>
+                    <span class="skill-tag">Cloud Infrastructure (AWS, Azure, GCP, Kubernetes)</span>
+                    <span class="skill-tag">Distributed Systems</span>
+                    <span class="skill-tag">Solana Blockchain Ecosystem</span>
+                    <span class="skill-tag">Engineering Leadership</span>
+                    <span class="skill-tag">Sustainability Tech</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    Technical Skills
+                </h2>
+                <table class="skills-table">
+                    <tr>
+                        <td class="skill-category-cell">Languages</td>
+                        <td class="skill-list-cell">TypeScript/JavaScript (Node.js), Go, C#, Dart</td>
+                    </tr>
+                    <tr>
+                        <td class="skill-category-cell">Blockchain</td>
+                        <td class="skill-list-cell">Solana (Geyser Stream, Jito bundles, Raydium AMM/CPMM, pump.fun,
+                            Anchor decoding)</td>
+                    </tr>
+                    <tr>
+                        <td class="skill-category-cell">Cloud</td>
+                        <td class="skill-list-cell">AWS (EKS, EC2, RDS, SQS, S3), Azure (Functions, Service Bus), GCP
+                            (Firestore, GKE)</td>
+                    </tr>
+                    <tr>
+                        <td class="skill-category-cell">Distributed Systems</td>
+                        <td class="skill-list-cell">Microservices, gRPC, NATS JetStream, event-driven patterns</td>
+                    </tr>
+                    <tr>
+                        <td class="skill-category-cell">Databases</td>
+                        <td class="skill-list-cell">PostgreSQL, ClickHouse, MongoDB, ArangoDB</td>
+                    </tr>
+                    <tr>
+                        <td class="skill-category-cell">DevOps</td>
+                        <td class="skill-list-cell">Docker, Kubernetes, Helm, GitHub CI/CD, Skaffold, ArgoCD</td>
+                    </tr>
+                    <tr>
+                        <td class="skill-category-cell">Architecture</td>
+                        <td class="skill-list-cell">SaaS, multi-tenancy, high-throughput ingestion systems</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    Recent Blockchain & Crypto Engineering (May 2025 – Present)
+                </h2>
+                <div class="highlight-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Solana Token Trading Engine & Analytics Platform — Architect &
+                                Engineer</div>
+                            <div class="company-name">Independent Product Builder | Crypto & AI Engineering</div>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <ul>
+                            <li>Built low-latency <strong>Solana Geyser listener</strong> in Go for real-time
+                                block/transactions ingestion.
+                                <ul>
+                                    <li>Designed ingestion pipeline using <strong>Geyser Stream → NATS JetStream →
+                                            ClickHouse/Postgres</strong> with sub-second end-to-end latency.</li>
+                                    <li>Developed decoding pipeline with custom instructions/events decoders for mint,
+                                        swap, pool creation and pool migration events for major solana programs like
+                                        <strong>pump.fun</strong>, <strong>pump-swap</strong>, <strong>Raydium
+                                            AMM/CPMM</strong>.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Developed <strong>ML-assisted trading engine</strong>:
+                                <ul>
+                                    <li>Trained XGBoost model on historical on-chain data to predict short-term price
+                                        movements of newly minted tokens.</li>
+                                    <li>Implemented feature engineering techniques to extract insights from on-chain
+                                        mint event data, improving model accuracy.</li>
+                                    <li>Developed trading engine with features like Delayed Buy, Multiple Take Profits,
+                                        trailing Stop-loss etc.</li>
+                                    <li>Optimised trading engine in Go for ultra-low latency execution which listens to
+                                        geyser stream, decodes transactions, constructs price stream and executes trades
+                                        on chain within milliseconds.</li>
+                                </ul>
+                            </li>
+                            <li>Leveraged <strong>AI-assisted coding</strong> tools (GitHub Copilot, Claude Code,
+                                ChatGPT Codex) to increase development throughput by ~5x.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Experience
+                </h2>
+                <div class="timeline">
+                    <!-- Job 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Principal Architect</div>
+                                <div class="company-name">Emission Critical Pvt. Ltd.</div>
+                            </div>
+                            <div class="job-date">Jul 2022 – May 2025</div>
+                        </div>
+                        <div class="job-details">
+                            <ul>
+                                <li>Architected and developed a <strong>multi-tenant ESG/PCF SaaS platform</strong> on
+                                    <strong>AWS EKS</strong> and <strong>Aurora Postgres</strong> enabling large
+                                    enterprise customers to capture/model supply chain emissions and ESG reporting.
+                                </li>
+                                <li>Designed <strong>Integration and ETL workflows</strong> using
+                                    <strong>Airbyte</strong>, <strong>NATS JetStream</strong> and
+                                    <strong>Postgres</strong> for loading and transforming activity data to
+                                    sustainability reports.
+                                </li>
+                                <li>Translated complex <strong>carbon accounting and ESG models</strong> into intuitive
+                                    digital workflows, improving adoption and data quality for clients.</li>
+                                <li>Owned <strong>system design, cloud architecture, performance, reliability, and
+                                        security posture</strong> of the platform.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Head of Technology</div>
+                                <div class="company-name">Poker Sports League (Hashtag Poker)</div>
+                            </div>
+                            <div class="job-date">Aug 2020 – Jun 2022</div>
+                        </div>
+                        <div class="job-details">
+                            <ul>
+                                <li>Joined as founding technology leader; <strong>built the entire engineering team from
+                                        scratch</strong> (11 members across backend, mobile, web, QA).</li>
+                                <li>Architected and delivered the <strong>Hashtag Poker</strong> platform — Flutter
+                                    mobile apps, Node.js microservices, and <strong>Kubernetes + NATS +
+                                        PostgreSQL</strong> backend.</li>
+                                <li>Integrated <strong>real-time game logic, payments, and event-driven
+                                        microservices</strong>, scaling to thousands of concurrent users.</li>
+                                <li>Established <strong>CI/CD, monitoring, and operational runbooks</strong>,
+                                    significantly improving release frequency and platform stability.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Engineering Manager & Co-Founder</div>
+                                <div class="company-name">Mu Software Solutions Pvt. Ltd.</div>
+                            </div>
+                            <div class="job-date">2014 – 2017, 2018 – 2020</div>
+                        </div>
+                        <div class="job-details">
+                            <ul>
+                                <li>Co-founded a technology services and product studio delivering <strong>end-to-end
+                                        product development</strong> for startups and mid-sized enterprises.</li>
+                                <li>Helped multiple founders go from <strong>idea → MVP → early traction</strong>,
+                                    emphasizing fast validation and real user feedback.</li>
+                                <li>Led architecture and development of <strong>cloud-native products</strong> using
+                                    <strong>Node.js (NestJS)</strong>, <strong>.NET Core</strong>,
+                                    <strong>Flutter</strong>, <strong>Azure</strong> and <strong>GCP</strong>.
+                                </li>
+                                <li>Built and managed engineering teams (0→25), owning <strong>requirement analysis,
+                                        architecture, execution, delivery, and client communication</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Job 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Consultant (Microsoft India — HP Inc.)</div>
+                                <div class="company-name">Data Glove IT Solutions</div>
+                            </div>
+                            <div class="job-date">2017 – 2018</div>
+                        </div>
+                        <div class="job-details">
+                            <ul>
+                                <li>Automated <strong>Azure analytics pipelines</strong> for <strong>HP Inc.</strong>,
+                                    improving speed and reliability of complex data operations.</li>
+                                <li>Implemented scripts and workflows using <strong>ADLA, ADLS, ADF, Logic Apps,
+                                        Automation Runbooks</strong>, reducing manual interventions by ~60%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Job 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Senior Software Engineer</div>
+                                <div class="company-name">PS Intelegencia Analytics Pvt. Ltd.</div>
+                            </div>
+                            <div class="job-date">2012 – 2014</div>
+                        </div>
+                        <div class="job-details">
+                            <ul>
+                                <li>Built modern web and mobile applications using <strong>.NET MVC</strong>,
+                                    <strong>Entity Framework</strong>, and related technologies.
+                                </li>
+                                <li>Owned end-to-end delivery from requirement discovery and design to deployment and
+                                    stabilization.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Job 7 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Software Engineer</div>
+                                <div class="company-name">Elixir Computech Pvt. Ltd.</div>
+                            </div>
+                            <div class="job-date">2010 – 2012</div>
+                        </div>
+                        <div class="job-details">
+                            <ul>
+                                <li>Developed <strong>enterprise automation solutions</strong> using
+                                    <strong>ASP.NET</strong>, JavaScript, and SQL Server.
+                                </li>
+                                <li>Collaborated directly with clients to translate business needs into scalable
+                                    technical designs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Projects
+                </h2>
+
+                <div class="project-card">
+                    <div class="project-title">Crypto Meme-Coin Trading Bot (Solana)</div>
+                    <div class="project-desc">High performance trading bot with ultra-low latency for newly minted
+                        Solana tokens. Trade based on XGBoost model predictions and on-chain signals and execute sell
+                        strategies like multiple take-profits and trailing stop-loss by continuously monitoring token
+                        price movements.</div>
+                    <div class="job-details">
+                        <ul>
+                            <li>Designed a custom <strong>Go-based trading engine</strong> using <strong>Solana Geyser
+                                    Streams</strong> for ultra-fast execution and real-time mint detection.</li>
+                            <li>Integrated <strong>developer-buy tracking, liquidity pool intelligence, wallet metrics,
+                                    and early-signal analytics</strong> to drive trading decisions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Product Carbon Footprint (PCF) SaaS Platform</div>
+                    <div class="project-desc">SOC2 certified multi-tenant SaaS platform for enterprise sustainability
+                        management, enabling organizations to measure, report, and reduce their carbon footprint and ESG
+                        impact.</div>
+                    <div class="job-details">
+                        <ul>
+                            <li>Implemented multi-tenant architecture with RBAC + ABAC access control, data isolation,
+                                and compliance features.
+                                <ul>
+                                    <li>Used OpenFGA for fine-grained access control across tenants and user roles.
+                                        OpenFGA is an open-source authorization system based on <strong>Google
+                                            Zanzibar</strong>.</li>
+                                </ul>
+                            </li>
+                            <li>Implemented a complex model to enable customers to create their process map and ingest
+                                activity data which in turn calculate product carbon footprints as per <strong>GHG
+                                    Standard</strong>.</li>
+                            <li><strong>NestJs (NodeJs)</strong> based microservices using NATS for inter-service
+                                communication and event-driven workflows.</li>
+                            <li>Created and maintained <strong>EKS</strong> Kubernetes cluster for hosting microservices
+                                and other workloads with <strong>Helm/Kustomize</strong> and <strong>ArgoCD</strong> for
+                                GitOps-based continuous deployment.</li>
+                            <li>Designed data ingestion pipelines using <strong>Airbyte</strong> to connect various data
+                                sources (S3, ERP, CRM, spreadsheets) to the platform.</li>
+                            <li>OpenTelemetry-based observability with distributed tracing, metrics, and logging using
+                                <strong>SigNoz</strong>.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Hashtag Poker Platform</div>
+                    <div class="project-desc">End-to-end poker learning and playing platform with cross-platform mobile
+                        apps, real-time game engine, and scalable backend infrastructure.</div>
+                    <div class="job-details">
+                        <ul>
+                            <li>Led full-stack development of <strong>Flutter mobile apps</strong> (iOS/Android) with
+                                shared business logic using MVVM architecture.</li>
+                            <li>Built <strong>Node.js microservices</strong> for game logic, user management, payments,
+                                and notifications.</li>
+                            <li>Deployed backend on <strong>Kubernetes</strong> with <strong>NATS JetStream</strong> for
+                                real-time messaging and <strong>MongoDB</strong> for data storage.</li>
+                            <li>Established CI/CD pipelines using <strong>GitHub Actions</strong> and implemented
+                                monitoring with <strong>Prometheus</strong> and <strong>Grafana</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Arkaa Digital Healthcare Platform</div>
+                    <div class="project-desc">A comprehensive digital healthcare platform for telemedicine, patient
+                        management, and health data analytics.</div>
+                    <div class="job-details">
+                        <ul>
+                            <li>Built a <strong>cloud-native digital consultation ecosystem</strong> on <strong>Azure
+                                    microservices</strong> with secure patient-doctor interactions, appointment
+                                scheduling, and document sharing.</li>
+                            <li>Designed distributed microservices with <strong>Azure AD</strong>, queues, and
+                                notification systems; led an 11-member cross-functional team.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Adda52 Poker & Rummy Apps</div>
+                    <div class="project-desc">Leading online poker and rummy gaming platform in India with millions of
+                        users.</div>
+                    <div class="job-details">
+                        <ul>
+                            <li>Architected cross-platform <strong>Xamarin</strong> apps, enabling ~60% of overall
+                                traffic via mobile.</li>
+                            <li>Implemented shared business logic and MVVM patterns to streamline iOS/Android
+                                development.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    Education
+                </h2>
+                <div class="card">
+                    <div class="job-header">
+                        <div class="job-title">Bachelor of Engineering — Computer Science Engineering</div>
+                        <div class="job-date">2005–2009</div>
+                    </div>
+                    <div class="company-name">Somany Institute of Technology & Management</div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
